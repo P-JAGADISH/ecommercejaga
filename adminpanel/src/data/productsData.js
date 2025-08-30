@@ -682,7 +682,7 @@ const bannerImages = [
   "https://www.anitadongre.com/on/demandware.static/-/Sites-AD-INDIA-Library/default/dw757e1c54/images/Home%20page/Jan_2025/Ready_to_ship_WEB.jpg",
   "https://www.anitadongre.com/on/demandware.static/-/Sites-AD-INDIA-Library/default/dwc2a35ab7/images/Home%20page/April%202025/AD_RTS_WEB_latest.jpg"
 ];
-      const response = await fetch(`http://localhost:5000/api/products?page=${page}`);
+      // const response = await fetch(`http://localhost:5000/api/products?page=${page}`);
 
 
 

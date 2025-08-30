@@ -4,6 +4,7 @@ import { AuthProvider, useAuth } from "./context/AuthContext";
 import { ToastProvider } from "./context/ToastContext";
 import Login from "./components/Login";
 import Layout from "./components/Layout";
+import Dashboard from "./pages/Dashboard";
 import Orders from "./pages/Orders";
 import Products from "./pages/Products";
 import AddProduct from "./pages/AddProduct";
@@ -13,6 +14,16 @@ import Categories from "./pages/Categories";
 import Profile from "./pages/Profile";
 import Toast from "./components/Toast";
 import Customers from "./pages/Customers";
+import Reports from "./pages/Reports";
+import Coupons from "./pages/Coupons";
+import ComboPack from "./pages/ComboPack";
+import Pages from "./pages/Pages";
+import MetaTags from "./pages/MetaTags";
+import Banners from "./pages/Banners";
+import HeaderFooter from "./pages/HeaderFooter";
+import Shipping from "./pages/Shipping";
+
+
 
 function AppRoutes() {
   const { isAuthenticated } = useAuth();
@@ -25,6 +36,7 @@ function AppRoutes() {
     <Layout>
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/add" element={<AddProduct />} />
@@ -33,6 +45,14 @@ function AppRoutes() {
         <Route path="/categories" element={<Categories />} />
         <Route path="/profile" element={<Profile />} />
        <Route path="/customers" element={<Customers />} />
+        <Route path="/reports" element={<Reports />} />
+        <Route path="/coupons" element={<Coupons />} />
+        <Route path="/combo-pack" element={<ComboPack />} /> 
+        <Route path="/pages" element={<Pages />} />
+        <Route path="/meta-tags" element={<MetaTags />} />
+        <Route path="/banners" element={<Banners />} />
+        <Route path="/header-footer" element={<HeaderFooter />} />
+        <Route path="/shipping" element={<Shipping />} />
 
       </Routes>
     </Layout>

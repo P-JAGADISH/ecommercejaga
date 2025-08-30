@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import {
-  X,
+    X,
   LayoutDashboard,
   ShoppingCart,
   Package as PackageIcon,
@@ -8,6 +8,14 @@ import {
   User,
   Layers,
   Users,
+  BarChart2,
+  Percent,
+  Box,
+  FileText,
+  Bookmark,
+  Image as ImageIcon,
+  Layout,
+  Truck,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -22,6 +30,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     { name: "Categories", href: "/categories", icon: Tag },
     { name: "Profile", href: "/profile", icon: User },
     { name: "Customers", href: "/customers", icon: Users }, 
+    { name: "Reports", href: "/reports", icon: BarChart2 },
+    { name: "Coupons", href: "/coupons", icon: Percent },
+    { name: "Combo Pack", href: "/combo-pack", icon: Box },
+    { name: "Pages", href: "/pages", icon: FileText },
+    { name: "Meta Tags", href: "/meta-tags", icon: Bookmark },
+    { name: "Banners", href: "/banners", icon: ImageIcon },
+    { name: "Header Footer", href: "/header-footer", icon: Layout },
+    { name: "Shipping", href: "/shipping", icon: Truck },
   ];
 
   return (
